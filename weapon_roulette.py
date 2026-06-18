@@ -19,7 +19,7 @@ else:
     weapons = []
 
 # アプリのタイトル
-st.title(" Squid スプラ3 武器ルーレット Octopus ")
+st.title("スプラ3 武器ルーレット")
 st.write("ボタンを押すと、画像付きでブキがランダムに選ばれるよ！")
 
 # ブキが1つも見つからない場合の警告
@@ -43,7 +43,7 @@ else:
         final_weapon = random.choice(weapons)
         
         # 決定したブキの名前を表示
-        placeholder_text.markdown(f"## 🎉 決定: 【 {final_weapon} 】 🎉")
+        placeholder_text.markdown(f"## 🎉【 {final_weapon} 】 🎉")
         
         # 2. 決定したブキの名前に対応する画像を自動で探して表示
         # フォルダ内にある実際のファイル名を検索
