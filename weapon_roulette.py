@@ -45,7 +45,7 @@ with center_content:
             final_weapon = random.choice(weapons)
             
             # 決定したブキの名前を表示（st.header を使用）
-            placeholder_text.header(f"【 {final_weapon} 】")
+            placeholder_text.header(final_weapon)
             
             # 決定したブキの名前に対応する画像を検索
             actual_file = [f for f in os.listdir(IMAGE_DIR) if os.path.splitext(f)[0] == final_weapon][0]
